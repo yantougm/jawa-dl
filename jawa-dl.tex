@@ -1,0 +1,25 @@
+\documentclass[a5paper]{scrbook}
+\usepackage{longtable}
+\usepackage{fontspec}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage{palatino}
+\usepackage{microtype}
+\usepackage{luacode}
+\usepackage{tikz}
+
+\input{jawamac}
+\parskip6pt
+\parindent20pt
+\newcommand\tstrut{\rule{0pt}{2.6ex}} % top strut of height 2.6ex to add space after \hline
+
+\newcommand{\jawa}{\fontspec{Genk Kobra Gerbangpraja}[]}
+\newcommand{\jawauc}{\large\fontspec{Nawatura beta}[]}
+\setmainfont{CormorantGaramond}
+
+\begin{document}
+\foreach \nomor in {35,36}{
+    \input{LI/jawa-dl-LI-\nomor}
+}
+\end{document}
+
